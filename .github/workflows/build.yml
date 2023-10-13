@@ -3,7 +3,6 @@ on:
   push:
     branches: [main,develop]
   workflow_dispatch:
-env:
 jobs:
   release_gs:
     runs-on: ubuntu-latest
