@@ -1,0 +1,16 @@
+name: CI
+on:
+  push:
+    branches: [main,develop]
+  workflow_dispatch:
+env:
+jobs:
+  release_gs:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout repository
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build Image
+        run: |
+          ./build.sh
