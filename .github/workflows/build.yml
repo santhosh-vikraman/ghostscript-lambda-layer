@@ -18,4 +18,5 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           bodyFile: "body.md"
+          artifacts: "body.md"
           tag: 10.02.0
